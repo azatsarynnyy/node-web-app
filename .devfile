@@ -1,10 +1,10 @@
 specVersion: 0.0.1
 name: che-k8s-plugin
 projects:
-  - name: sample
+  - name: node-web-app
     source:
       type: git
-      location: 'https://github.com/azatsarynnyy/sample.git'
+      location: 'https://github.com/azatsarynnyy/node-web-app.git'
 tools:
   - name: theia-ide
     type: cheEditor
@@ -21,4 +21,4 @@ commands:
       - type: exec
         tool: builder-plugin
         command: buildah
-        workdir: /projects/sample
+        workdir: /projects/node-web-app
